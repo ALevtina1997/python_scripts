@@ -36,7 +36,7 @@ date=[
 #	['Декабрь', '2019-12-01 10:00:00', '2020-01-01 03:00:00'] '''
         ]
 
-workbook = xlsxwriter.Workbook('otchet_bux_fiz.xlsx')
+workbook = xlsxwriter.Workbook('otchet_bux_fiz1.xlsx')
 worksheet = workbook.add_worksheet()
 while i<(len(date)):
 	cur.execute("""SELECT COUNT(users.full_name), SUM(invoice_entry.sum_cost) as summa
